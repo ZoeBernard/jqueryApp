@@ -1,0 +1,37 @@
+https://api.jquery.com
+
+add()
+addclass
+after
+animate
+append
+attr
+before
+bind
+blur
+children	
+click()
+css()
+data()
+each
+fadein
+fadeout
+fadeto
+fadetoggle
+filter		pittig
+first
+focus
+hasClass
+hide
+html
+is
+keydown
+keyup
+map		pittig
+on
+prop
+slideUp
+text
+val
+
+jQuery.ajax()

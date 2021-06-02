@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+    <head>
+        <title>Basisrecept Brood</title>
+        <meta name="description" content="Basisrecept Brood">
+        <meta name="author" content="ZoeBernard">
+
+		<link rel="stylesheet" href="jquery.css">
+		<script src="jquery-3.6.0.min.js"></script>
+        <script>
+			$(document).ready(function () {
+				$('#seeIMG').click(function(){
+					$('.exampleIMG').append('<img id="example1" src="https://www.leukerecepten.nl/wp-content/uploads/2020/09/brood_bakken_08.jpg" alt="exampleIMG">');
+					$('<img id="example2" src="https://www.leukerecepten.nl/wp-content/uploads/2020/09/brood_bakken_09.jpg" alt="exampleIMG">').insertAfter('#example1');
+				});
+
+				$('#hideIMG').click(function(){
+					$('#example1').remove();
+					$('#example2').remove();
+				});
+
+				$('#topbtn').click(function () {
+					$('html, body').animate({scrollTop: 0}, 500);
+				});
+
+                $('.terug').click(function () {
+                    window.location.href='startJquery.html';
+					return false;
+                });
+
+				$('.stap').click(function(){
+					if ($(this).css('color') == 'rgb(0, 0, 0)') {
+            			$(this).css('color', 'green');
+        			}
+        			else {
+            			$(this).css('color', 'black');
+        			}
+				})
+			});
+			
+        </script>
+    </head>
+
+	<body>
+		<div class="header">
+			<h1>Basisrecept Brood</h1>
+		</div>
+		
+		<div class="receptDetail">
+			<div class = bigDiv>
+				<div class="smallpicture">
+					<img src="https://www.leukerecepten.nl/wp-content/uploads/2020/09/zelf-brood-bakken_v.jpg" alt="Bread Stockphoto2">
+				</div>
+
+				<div class = "ingredientsDetail">
+					<b>Ingrediënten:</b>
+					<ul class=ingr_lijst>
+						<li>Patentbloem - 500 Gram</li>
+						<li>Zout - 5 Gram</li>	
+						<li>Droge Gist - 7 Gram</li>	
+						<li>Lauwwarm Water - 320 Mililiter</li>	
+						<li>Olie of Boter</li>
+						<li>Broodverbeteraar - 25 Gram (Optioneel)</li>	
+					</ul>
+				</div>
+			</div>
+
+			<div class="tekst">
+				<b class="stap">Stap 1:</b>
+				<p id="stap1">Meng de gist met het water. Mix het zout met de patentbloem en eventueel de broodverbeteraar door elkaar in een grote kom met een mixer met deeghaken.</p>
+                <br>
+				<b class="stap">Stap 2:</b>
+                <p id="stap2">Giet het water met de gist erbij en mix een paar minuten goed door elkaar tot er een geheel ontstaat. Bebloem een oppervlak en ga hier het deeg verder met je handen kneden, zo’n 10 minuten. Houd het deeg met een hand vast en druk met je andere handpalm het deeg uit elkaar, druk bij elkaar en herhaal dit weer. Het is belangrijk om het deeg goed te kneden zodat het elastisch wordt en de gluten worden geactiveerd, dit zorgt voor een luchtig brood</p>
+                <br>
+				<b class="stap">Stap 3:</b>
+                <p id="stap3">Leg het deeg daarna in een bal in een kom die lichtjes is ingevet met een beetje olie. Dek af met een iets vochtige theedoek. Laat het deeg 1 uur rijzen, het liefst bij een temperatuur van 27 tot 35 graden.</p>
+				<br>
+				<b class="stap">Stap 4:</b>
+				<p id="stap4">Als het deeg goed gerezen is haal je het weer uit de kom en kneed je het nog een aantal keer goed door. Rol het uit tot een iets ovale rechthoek. Vouw de 2 buitenste gedeelte naar binnen over het midden en druk goed plat. Rol de lap deeg daarna op (houd rekening dat hij in de lengte in de vorm past.</p>
+                
+				<div class="exampleIMG">
+					<b>Voorbeeld fotoos stap 4:</b>
+					<button id="seeIMG">Show Foto</button> <button id="hideIMG">Verberg Foto</button>
+				</div>
+			</div>	
+
+			<p class="terug"><i class="arrow left"></i>Terug</p>
+		</div>
+
+		<div class=TopBTN>
+			<button id=topbtn ><i class="arrow up"></i></button>
+		</div>
+
+	</body>
+</html>

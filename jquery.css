@@ -1,0 +1,140 @@
+body{
+    background-color: #438975;
+}
+
+h2{
+    margin: 10px;
+    text-align: center;
+}
+
+.header{
+    text-align: center;
+    background-color: #d1e7e3;
+    border-radius: 15px;
+    margin: 25px auto;
+    max-width: 50%;
+    padding: 15px;
+}
+
+.picture{
+    width: 49%;
+    float: left;
+    margin-right: 5px;
+    margin-bottom: 30px;
+}
+
+.smallpicture{
+    width: 25%;
+    float: left;
+    margin-right: 10px;
+    margin-bottom: 30px;
+}
+
+.tekst-ingredients{
+    width: 49%;
+    float: right;
+    margin-bottom: 30px;
+}
+
+.tekst{
+    margin-bottom: 30px;
+}
+
+.ingredientsDetail{
+    width: 70%;
+    float: right;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.recept{
+    background-color: #d1e7e3;
+    border-radius: 15px;
+    margin: 25px auto;
+    max-width: 50%;
+    max-height: fit-content;
+    padding: 15px;
+    overflow: hidden;
+}
+
+.receptDetail{
+    background-color: #d1e7e3;
+    border-radius: 15px;
+    margin: 25px auto;
+    max-width: 50%;
+    max-height: fit-content;
+    padding: 15px;
+}
+
+.solid{
+    border-top: 2px solid #006b4d;
+    width: 100%;
+}
+
+img{
+    border-radius: 15px;
+    width: 100%;
+    border: 2px solid black;
+}
+
+.arrow {
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+  }
+  
+.right {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+}
+  
+.left {
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+}
+
+.up {
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+}
+
+.arrowBTN{
+    margin: 10px 2px;
+    padding: 5px 20px;
+    border-radius: 15px;
+    background-color: #0093D5;
+    border: 1px solid black;
+    color: #FFF;
+    font-size: small;
+}
+
+.TopBTN{
+    text-align: right;
+}
+
+#topbtn{
+    border-radius: 50%;
+    padding: 20px;
+    border: 1px solid black;
+}
+
+.bigDiv{
+    overflow: hidden;
+}
+
+.exampleIMG{
+    width: 25%;
+}
+
+.terug{
+    color: darkblue
+}
+
+.stapActive{
+    color:green;
+}
+
+.stap{
+    color: black;
+}

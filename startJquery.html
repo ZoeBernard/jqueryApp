@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+	<head>
+		<title>Jquery - Test</title>
+		<meta name="description" content="Recepten Boek">
+        <meta name="author" content="ZoeBernard">
+		<link rel="stylesheet" href="jquery.css">
+		<script src="jquery-3.6.0.min.js"></script>
+		<script>
+			$(document).ready(function () {
+				//$('.arrowBTN').click(function(){
+				//	$('body').load('broodRecept.html');
+				//});
+
+				//$('button').click(function(){
+				//	$('p').html('Hello <b>world</b>!');
+				//});
+
+				$("#topbtn").click(function () {
+					$("html, body").animate({scrollTop: 0}, 500);
+				});
+
+				$('.headerDiv').append('<hr class="solid"></hr>');
+
+
+				$('#bekijkBrood').click(function(){
+					window.location.href="broodRecept.html";
+					return false;
+				})
+
+				$('#bekijkAardappel').click(function(){
+					window.location.href="aardappelRecept.html";
+					return false;
+				})
+
+				$('#bekijkTomatensoep').click(function(){
+					window.location.href="soepRecept.html";
+					return false;
+				})
+
+			});
+
+
+		</script>
+	</head>
+	<body>
+		<div class="header">
+			<h1>Recepten Boek</h1>
+		</div>
+		
+		<div class="recept">
+			<div class="headerDiv">
+				<h2>Basisrecept Brood</h2>				
+			</div>
+			<div class=bigDiv>
+				<div class="picture">
+					<img src="https://www.leukerecepten.nl/wp-content/uploads/2020/09/zelf-brood-bakken-1.jpg" alt="Brood">
+				</div>
+				<div class="tekst-ingredients">
+					<p>Makkelijk stap voor stap basisrecept voor het bakken van heerlijk luchtig brood!</p>
+					<b>Ingrediënten</b>
+					<ul class=ingr_lijst>
+						<li>Patentbloem - 500 Gram</li>
+						<li>Zout - 5 Gram</li>	
+						<li>Droge Gist - 7 Gram</li>	
+						<li>Lauwwarm Water - 320 Mililiter</li>	
+						<li>Olie of Boter</li>
+						<li>Broodverbeteraar - 25 Gram (Optioneel)</li>	
+					</ul>
+				</div>
+			</div>
+
+			<div class="buttons">
+				<button id="bekijkBrood">Bekijk Recept</button>
+			</div>
+		</div>
+		
+		<div class="recept">
+			<div class="headerDiv">
+				<h2>Tomatensoep</h2>
+			</div>
+			<div class=bigDiv>
+				<div class="picture">
+					<img src="https://www.leukerecepten.nl/wp-content/uploads/2021/01/tomaten-creme-soep.jpg" alt="Tomatensoep">
+				</div>
+				<div class="tekst-ingredients">
+					<p>Maak tomaten-crèmesoep met verse tomaten!</p>
+					<b>Ingrediënten</b>
+					<ul class=ingr_lijst>
+						<li>Tomaten - 1 Kilo</li>
+						<li>Tomatenpuree - 70 Gram</li>	
+						<li>Uien - 2 Stuks</li>	
+						<li>Knoflook - 2 Teentjes</li>	
+						<li>Kookroom - 250 Mililiter</li>
+						<li>Paprikapoeder - 1 Theelepel</li>	
+						<li>Water - 300 Mililiter</li>	
+					</ul>
+				</div>
+			</div>
+
+			<div class="buttons">
+				<button id="bekijkTomatensoep">Bekijk Recept</button>
+			</div>
+		</div>
+
+		<div class="recept">
+			<div class="headerDiv">
+				<h2>Hasselback aardappelen</h2>
+			</div>
+			<div class=bigDiv>
+				<div class="picture">
+					<img src="https://www.leukerecepten.nl/wp-content/uploads/2020/11/hasselback-aardappelen.jpg" alt="hasselback-aardappelen">
+				</div>
+				<div class="tekst-ingredients">
+					<p>Dungesneden krokante aardappeltjes in waaier vorm met kaas en boter uit de oven!</p>
+					<b>Ingrediënten</b>
+					<ul class=ingr_lijst>
+						<li>Aardappels - 4 Stuks</li>
+						<li>Boter - 40 Gram</li>
+						<li>Parmezaanse Kaas - 30 Gram</li>		
+						<li>Knoflook - 1 Teen</li>
+						<li>Tijm</li>
+						<li>Peper</li>
+						<li>Zout</li>	
+					</ul>
+				</div>
+			</div>
+
+			<div class="buttons">
+				<button id="bekijkAardappel">Bekijk Recept</button>
+			</div>
+		</div>
+
+		<div class=TopBTN>
+			<button id=topbtn ><i class="arrow up"></i></button>
+		</div>
+
+	</body>
+</html>

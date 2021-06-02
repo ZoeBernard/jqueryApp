@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+    <head>
+        <title>Hasselback Aardappelen</title>
+        <meta name="description" content="Hasselback Aardappelen">
+        <meta name="author" content="ZoeBernard">
+
+		<link rel="stylesheet" href="jquery.css">
+		<script src="jquery-3.6.0.min.js"></script>
+        <script>
+            $(document).ready(function () {
+                $('#seeIMG').click(function(){
+                    $('.exampleIMG').append('<img id="example1" src="https://www.leukerecepten.nl/wp-content/uploads/2020/11/hasselback_aardappel_01.jpg" alt="exampleIMG">');
+                    $('<img id="example2" src="https://www.leukerecepten.nl/wp-content/uploads/2020/11/hasselback_aardappel_02.jpg" alt="exampleIMG">').insertAfter('#example1');
+                })
+
+                $('#hideIMG').click(function(){
+                    $('#example1').remove();
+                    $('#example2').remove();
+                })
+
+                $("#topbtn").click(function () {
+                    $("html, body").animate({scrollTop: 0}, 500);
+                });
+
+                $(".terug").click(function () {
+                    window.location.href="startJquery.html";
+					return false;
+                });
+
+				$('.stap').click(function(){
+					if ($(this).css('color') == 'rgb(0, 0, 0)') {
+            			$(this).css('color', 'green');
+        			}
+        			else {
+            			$(this).css('color', 'black');
+        			}
+				})
+            })
+
+        </script>
+    </head>
+
+	<body>
+		<div class="header">
+			<h1>Hasselback Aardappelen</h1>
+		</div>
+		
+		<div class="receptDetail">
+			<div class = bigDiv>
+				<div class="smallpicture">
+					<img src="https://www.leukerecepten.nl/wp-content/uploads/2020/11/hasselback-aardappelen_v.jpg" alt="PotatoStock">
+				</div>
+
+				<div class = "ingredientsDetail">
+					<b>Ingrediënten:</b>
+					<ul class=ingr_lijst>
+						<li>Aardappels - 4 Stuks</li>
+						<li>Boter - 40 Gram</li>
+						<li>Parmezaanse Kaas - 30 Gram</li>		
+						<li>Knoflook - 1 Teen</li>
+						<li>Tijm</li>
+						<li>Peper</li>
+						<li>Zout</li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="tekst">
+				<b class="stap">Stap 1:</b>
+				<p id="stap1">Verwarm de oven op 200 graden. Boen de aardappels goed schoon. Smelt de boter en roer de olijfolie erdoor. Pers de knoflook uit bij het oliemengsel. Voeg een snuf peper, zout en tijm toe en roer erdoor.</p>
+                <br>
+				<b class="stap">Stap 2:</b>
+                <p id="stap2">Leg de aardappel op een (grote) lepel en snijd in hele dunne schijfjes. De lepel zorgt er voor dat je de aardappel niet helemaal doormidden snijdt. Leg in een ovenschaal. Kwast de aardappels in met de knoflookolie, ook tussen de inkepingen. Bestrooi met een beetje geraspte Parmezaanse kaas.</p>
+                <br>
+				<b class="stap">Stap 3:</b>
+                <p id="stap3">Bak de hasselback aardappels 50 min in de oven. Lekker als bijgerecht bij een stukje vlees, vis of vega.</p>
+				<br>
+				
+				<div class="exampleIMG">
+                    <b>Voorbeeld fotoos stap 2:</b>
+                    <button id="seeIMG">Show Foto</button> <button id="hideIMG">Verberg Foto</button>	
+				</div>
+			</div>	
+
+            <p class="terug"><i class="arrow left"></i>Terug</p>
+		</div>
+
+        <div class=TopBTN>
+			<button id=topbtn ><i class="arrow up"></i></button>
+		</div>
+
+	</body>
+</html>

@@ -1,0 +1,8 @@
+.append()	Voegt element toe aan html
+.remove()	Verwijderd element uit html
+.animate()	animeert het scherm
+.scrollTop()	zet de coordinaten voor het scrollen
+.click()	zorgt ervoor dat als je erop klikt, een functie aan
+.ready()	Run alles in een aangegeven functie NADAT de DOM geladen is
+.insertAfter()	Inserts element na aangegeven element
+.css()		To get color - and set color
