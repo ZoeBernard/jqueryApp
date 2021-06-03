@@ -9,14 +9,9 @@
         <script>
             $(document).ready(function () {
                 $('#seeIMG').click(function(){
-                    $('.exampleIMG').append('<img id="example1" src="https://www.leukerecepten.nl/wp-content/uploads/2020/11/hasselback_aardappel_01.jpg" alt="exampleIMG">');
-                    $('<img id="example2" src="https://www.leukerecepten.nl/wp-content/uploads/2020/11/hasselback_aardappel_02.jpg" alt="exampleIMG">').insertAfter('#example1');
-                })
-
-                $('#hideIMG').click(function(){
-                    $('#example1').remove();
-                    $('#example2').remove();
-                })
+					$('#example1').toggle('slow', function() {});
+					$('#example2').toggle('slow', function() {});
+            	});
 
                 $("#topbtn").click(function () {
                     $("html, body").animate({scrollTop: 0}, 500);
@@ -78,7 +73,9 @@
 				
 				<div class="exampleIMG">
                     <b>Voorbeeld fotoos stap 2:</b>
-                    <button id="seeIMG">Show Foto</button> <button id="hideIMG">Verberg Foto</button>	
+                    <button id="seeIMG">Show Foto</button>
+					<img id="example1" src="https://www.leukerecepten.nl/wp-content/uploads/2020/11/hasselback_aardappel_01.jpg" alt="exampleIMG" style="display: none;">
+					<img id="example2" src="https://www.leukerecepten.nl/wp-content/uploads/2020/11/hasselback_aardappel_02.jpg" alt="exampleIMG" style="display: none;">		
 				</div>
 			</div>	
 

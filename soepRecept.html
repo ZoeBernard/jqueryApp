@@ -9,21 +9,16 @@
         <script>
             $(document).ready(function () {
                 $('#seeIMG').click(function(){
-                    $('.exampleIMG').append('<img id="example1" src="https://www.leukerecepten.nl/wp-content/uploads/2021/01/tomaten-creme-soep_02.jpg" alt="exampleIMG">');
-                    $('<img id="example2" src="https://www.leukerecepten.nl/wp-content/uploads/2021/01/tomaten-creme-soep_03.jpg" alt="exampleIMG">').insertAfter('#example1');
-                })
+					$('#example1').toggle('slow', function() {});
+					$('#example2').toggle('slow', function() {});
+            	});
 
-                $('#hideIMG').click(function(){
-                    $('#example1').remove();
-                    $('#example2').remove();
-                })
-
-                $("#topbtn").click(function () {
-                    $("html, body").animate({scrollTop: 0}, 500);
+                $('#topbtn').click(function () {
+                    $('html, body').animate({scrollTop: 0}, 500);
                 });
 
-                $(".terug").click(function () {
-                    window.location.href="startJquery.html";
+                $('.terug').click(function () {
+                    window.location.href= 'startJquery.html';
 					return false;
                 });
 
@@ -35,7 +30,9 @@
             			$(this).css('color', 'black');
         			}
 				})
-            })
+            });
+
+			
 
         </script>
     </head>
@@ -78,7 +75,9 @@
 				
 				<div class="exampleIMG">
                     <b>Voorbeeld fotoos stap 2:</b>
-                    <button id="seeIMG">Show Foto</button> <button id="hideIMG">Verberg Foto</button>
+                    <button id="seeIMG">Show Foto</button>
+					<img id="example1" src="https://www.leukerecepten.nl/wp-content/uploads/2021/01/tomaten-creme-soep_02.jpg" alt="exampleIMG" style="display: none;">
+					<img id="example2" src="https://www.leukerecepten.nl/wp-content/uploads/2021/01/tomaten-creme-soep_03.jpg" alt="exampleIMG" style="display: none;">
 						
 				</div>
 			</div>	

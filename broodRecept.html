@@ -8,15 +8,10 @@
 		<script src="jquery-3.6.0.min.js"></script>
         <script>
 			$(document).ready(function () {
-				$('#seeIMG').click(function(){
-					$('.exampleIMG').append('<img id="example1" src="https://www.leukerecepten.nl/wp-content/uploads/2020/09/brood_bakken_08.jpg" alt="exampleIMG">');
-					$('<img id="example2" src="https://www.leukerecepten.nl/wp-content/uploads/2020/09/brood_bakken_09.jpg" alt="exampleIMG">').insertAfter('#example1');
-				});
-
-				$('#hideIMG').click(function(){
-					$('#example1').remove();
-					$('#example2').remove();
-				});
+                $('#seeIMG').click(function(){
+					$('#example1').toggle('slow', function() {});
+					$('#example2').toggle('slow', function() {});
+            	});
 
 				$('#topbtn').click(function () {
 					$('html, body').animate({scrollTop: 0}, 500);
@@ -76,10 +71,12 @@
 				<br>
 				<b class="stap">Stap 4:</b>
 				<p id="stap4">Als het deeg goed gerezen is haal je het weer uit de kom en kneed je het nog een aantal keer goed door. Rol het uit tot een iets ovale rechthoek. Vouw de 2 buitenste gedeelte naar binnen over het midden en druk goed plat. Rol de lap deeg daarna op (houd rekening dat hij in de lengte in de vorm past.</p>
-                
+				
 				<div class="exampleIMG">
-					<b>Voorbeeld fotoos stap 4:</b>
-					<button id="seeIMG">Show Foto</button> <button id="hideIMG">Verberg Foto</button>
+                    <b>Voorbeeld fotoos stap 4:</b>
+                    <button id="seeIMG">Show Foto</button>
+					<img id="example1" src="https://www.leukerecepten.nl/wp-content/uploads/2020/09/brood_bakken_08.jpg" alt="exampleIMG" style="display: none;">
+					<img id="example2" src="https://www.leukerecepten.nl/wp-content/uploads/2020/09/brood_bakken_09.jpg" alt="exampleIMG" style="display: none;">		
 				</div>
 			</div>	
 
