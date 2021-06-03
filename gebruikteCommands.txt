@@ -6,4 +6,4 @@
 .ready()	Run alles in een aangegeven functie NADAT de DOM geladen is
 .insertAfter()	Inserts element na aangegeven element
 .css()		To get color - and set color
-.toggle()   To toggle the visibility of the images
+.toggle()   	To toggle the visibility of the images
